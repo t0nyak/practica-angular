@@ -10,7 +10,7 @@
       |==========================================================================|
       | Un clic sobre el autor debería navegar a su colección de posts.          |
       |========================================================================-->
-      <span (click)="clickAuthor()" class="name blink-font">{{ post.author.name }}</span>
+      <span (click)="showAuthorPosts(post.author)" class="name blink-font">{{ post.author.name }}</span>
 
       <!--=======================================================================|
       | Blue Path               DONE!!!                                          |

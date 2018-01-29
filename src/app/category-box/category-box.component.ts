@@ -22,13 +22,8 @@ export class CategoryBoxComponent {
   |=========================================================================*/
 
   @Output() onClickCategory = new EventEmitter<Category>();
-  clickCategory(categoryName: string) { 
-    let category;
-    this.categories.forEach( cat => {
-      if(cat.name == categoryName){
-        this.onClickCategory.emit(cat);
-      }
-    });
+  clickCategory(cat: Category) { 
+      this.onClickCategory.emit(cat);
   }
 
 }

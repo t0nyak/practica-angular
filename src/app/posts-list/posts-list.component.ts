@@ -39,7 +39,7 @@ export class PostsListComponent {
   | identificador del post.                                                  |
   |=========================================================================*/
   
-  showPost(id: number) {
-    this._router.navigateByUrl('/posts/' + id);
+  showPost(post: Post) {
+    this._router.navigateByUrl('/posts/' + post.id);
   }
 }
